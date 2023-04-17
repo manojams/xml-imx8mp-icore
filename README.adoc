@@ -13,9 +13,9 @@ Download the BSP source:
 
 [source,console]
 $: PATH=${PATH}:~/bin
-$: mkdir fsl-community-bsp
-$: cd fsl-community-bsp
-$: repo init -u https://github.com/Freescale/fsl-community-bsp-platform -b kirkstone
+$: mkdir fsl-imx8mp-icore-platform
+$: cd fsl-imx8mp-icore-platform
+$: repo init -u https://github.com/manojams/fsl-imx8mp-platform  -b kirkstone
 $: repo sync
 
 At the end of the commands you have every metadata you need to start work with.
@@ -24,7 +24,7 @@ To start a simple image build:
 
 [source,console]
 $: source ./setup-environment build
-$: bitbake core-image-minimal
+$: bitbake core-image-full-cmdline
 
 You can use any directory to host your build.
 
